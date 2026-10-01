@@ -22,7 +22,7 @@ This should be your #1 priority.
 
 Before React or Node, make sure you can comfortably explain:
 
-* var, let, const
+* `var`, `let`, `const`
 * Scope and lexical scope
 * Hoisting
 * Closures
