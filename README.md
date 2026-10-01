@@ -150,7 +150,7 @@ Study in this order:
 
 You should eventually be able to answer:
 
-# “What happens from the moment a request reaches your Node server until the response is returned?”
+#### “What happens from the moment a request reaches your Node server until the response is returned?”
 
 That's a very valuable fundamentals question.
 
@@ -183,7 +183,7 @@ Understand **why and when** things work.
 * Normalization
 * ACID
 
-# Then connect it to Mongoose:
+#### Then connect it to Mongoose:
 
 * Schema
 * Model
@@ -227,7 +227,7 @@ Build strong fundamentals around:
 
 For example, you should be able to explain:
 
-# Why do we use POST instead of GET for creating data?
+#### Why do we use POST instead of GET for creating data?
 
 rather than simply memorizing:
 
