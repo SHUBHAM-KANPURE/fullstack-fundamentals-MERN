@@ -352,24 +352,21 @@ fullstack-fundamentals-MERN/
 
 This repository is a continuous learning and interview-preparation resource for becoming a stronger **Full-Stack MERN Developer**.
 
--------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------
+---
 
 
-# aaaaaa
+# Here are the answers to all the above questions.
 
 ---
 
 ## Tech & Topics
 
-### 1. Start with the foundation: JavaScript
-
-This should be your #1 priority.
+### 1. JavaScript
 
 #### Variables, Scope & Functions
 
 * **`var`, `let`, `const`** — `var` is function-scoped and hoisted as `undefined`. `let` and `const` are block-scoped and live in the Temporal Dead Zone until declared. `const` prevents re-assignment, not mutation of objects.
-  > 🇮🇳 **Hinglish:** `var` function-scoped hota hai aur `undefined` ke saath hoist hota hai. `let` aur `const` block-scoped hain aur declare hone se pehle TDZ mein rehte hain. `const` variable ko dobara assign nahi karne deta, lekin object ke andar ki values change ho sakti hain.
+  **Hinglish:** `var` function-scoped hota hai aur `undefined` ke saath hoist hota hai. `let` aur `const` block-scoped hain aur declare hone se pehle TDZ mein rehte hain. `const` variable ko dobara assign nahi karne deta, lekin object ke andar ki values change ho sakti hain.
 
 * **Scope and lexical scope** — Scope decides where a variable is accessible (global, function, block). Lexical scope means that is decided by where the code is *written*, not where it is called.
   > 🇮🇳 **Hinglish:** Scope batata hai ki variable kahan-kahan use ho sakta hai (global, function, block). Lexical scope ka matlab hai ki ye code *kahan likha hai* us se decide hota hai, kahan call hua us se nahi.
