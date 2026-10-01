@@ -16,83 +16,224 @@ The main goal of this repository is to build strong fundamentals and improve my 
 
 ## Tech & Topics
 
-### JavaScript
+### 1. Start with the foundation: JavaScript
 
-* Core JavaScript
-* Scope & Closures
+This should be your #1 priority.
+
+Before React or Node, make sure you can comfortably explain:
+
+* var, let, const
+* Scope and lexical scope
 * Hoisting
-* `this`
-* Functions
-* Promises & Async/Await
-* Event Loop
-* ES6+
-* Objects & Prototypes
-* Array Methods
-* Memory Management
+* Closures
+* this
+* Functions and callbacks
+* Arrow functions
+* Objects and prototypes
+* == vs ===
+* null vs undefined
+* Destructuring
+* Spread/rest
+* Array methods
+* map, filter, reduce
+* Promises
+* async/await
+* Event loop
+* Microtask vs macrotask
+* setTimeout
+* Error handling
+* Modules
+* Memory and garbage collection
 
-### React.js
+# Don't just learn definitions.
 
+For example, don't memorize:
+
+“A closure is a function bundled with its lexical environment.”
+
+You should be able to explain:
+
+“A closure happens when an inner function remembers variables from the outer function even after the outer function has finished executing.”
+
+Then give a tiny example.
+
+That's the level interviewers are looking for.
+
+### 2. Then build your React fundamentals
+
+Once JS is strong:
+
+# React fundamentals → React internals → performance
+
+* Why React exists
 * Components
 * Props & State
-* Hooks
 * Rendering & Re-rendering
 * Virtual DOM
 * Reconciliation
+* Keys
+* Hooks
+* `useState`
+* `useEffect`
+* `useRef`
+* `useMemo`
+* `useCallback`
 * Context API
-* State Management
-* Performance Optimization
 * Forms
+* Component communication
+* API calls
 * API Integration
+* Error/loading states
+* Routing
+* Performance Optimization
+* State management
 
-### Node.js
+The key question for every React topic should be:
 
-* Node.js Fundamentals
-* Event Loop
+# “What problem does this solve?”
+
+For example:
+
+# Don't learn:
+`useMemo` = memoization.
+
+# Learn:
+“When React renders, some calculations may be expensive. useMemo lets us reuse a previously calculated value until its dependencies change.”
+
+That makes your answer much stronger.
+
+### 3. Node.js
+
+This is another area where interviewers can easily go beyond surface-level questions.
+
+Study in this order:
+
+# JavaScript async → Node runtime → HTTP → Express → database
+
+* What Node.js actually is
+* V8
+* libuv
+* Event loop
 * Non-blocking I/O
 * Event-driven Architecture
-* Streams & Buffers
-* Error Handling
+* Single-threaded model
 * Concurrency
-* Worker Threads
+* process.nextTick
+* setImmediate
+* Timers
+* Streams & Buffers
+* EventEmitter
+* Worker threads
+* Child processes
+* Cluster
+* Error handling
+* Graceful shutdown
 * Background Processing
 
-### Express.js
+### 4. Express.js
 
+* Request/response lifecycle
 * Routing
+* Controllers
+* Services
 * Middleware
+* Error middleware
+* Authentication middleware
 * Request/Response Lifecycle
 * Error Handling
 * Validation
 * Authentication
 * API Structure
 * REST APIs
+* CORS
+* Rate limiting
 
-### MongoDB & Mongoose
+You should eventually be able to answer:
 
-* CRUD Operations
+# “What happens from the moment a request reaches your Node server until the response is returned?”
+
+That's a very valuable fundamentals question.
+
+### 4. MongoDB & Mongoose + database fundamentals
+
+Don't restrict yourself to:
+
+“MongoDB is a NoSQL database.”
+
+Understand **why and when** things work.
+
 * Schema & Models
-* Indexing
+* Documents
+* Collections
+* _id / ObjectId
+* CRUD Operations
+* Indexes / Indexing
+* Compound indexes
+* Query optimization
+* explain()
 * Aggregation
-* Relationships
-* Embedding vs Referencing
+* $lookup
+* Embedding vs referencing
 * Transactions
-* Query Optimization
+* Atomicity
 * Pagination
+* MongoDB vs SQL
+* Basic SQL concepts
+* Relationships
+* Normalization
+* ACID
 
-### API & Web Fundamentals
+# Then connect it to Mongoose:
 
-* HTTP
-* REST
+* Schema
+* Model
+* Validation
+* Middleware
+* populate
+* lean
+* save
+* insertMany
+
+### 5. HTTP + REST + security / API & Web Fundamentals
+
+This is an area people often use every day but can't explain properly.
+
+Build strong fundamentals around:
+
+* HTTP request/response
+* HTTP vs HTTPS
 * HTTP Methods & Status Codes
 * Headers
+* Body
+* Query parameters
+* Path parameters
+* HTTP methods
+* Status codes
 * Cookies
-* CORS
 * Webhooks
-* API Authentication
-* Rate Limiting
-* API Versioning
+* Sessions
+* JWT
+* Refresh tokens
+* Authentication vs authorization
+* CORS
+* CSRF
+* XSS
+* HTTPS
+* Password hashing
+* API validation
+* Rate limiting
+* API versioning
+* Idempotency
 
-### Authentication & Security
+For example, you should be able to explain:
+
+# Why do we use POST instead of GET for creating data?
+
+rather than simply memorizing:
+
+“POST is used to create.”
+
+### 6. Authentication & Security
 
 * JWT
 * Sessions
@@ -104,22 +245,31 @@ The main goal of this repository is to build strong fundamentals and improve my 
 * CSRF
 * API Security
 
-### Software Engineering
+### 7. Then your real-world engineering fundamentals
+
+This is where your 3 years of experience should start showing.
 
 * Git & GitHub
 * Environment Variables
 * Debugging
 * Logging
 * Testing
+* Error handling
 * Docker Basics
 * Nginx
 * PM2
+* Linux basics
 * Deployment
-* CI/CD Basics
+* CI/CD basics
 * Redis
-* Queues & Background Jobs
+* Queues/background jobs
+* Cron jobs
+* Webhooks
+* Third-party API integration
+* Retry mechanisms
+* Rate limits
 
-### AI & LLM Fundamentals
+### 8. AI & LLM Fundamentals
 
 * LLM Basics
 * Prompt Engineering
@@ -133,7 +283,7 @@ The main goal of this repository is to build strong fundamentals and improve my 
 * Conversation Memory
 * LLM API Integration
 
-### System Design
+### 9. System Design
 
 * Scalability
 * Caching
