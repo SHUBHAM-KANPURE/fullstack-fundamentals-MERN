@@ -45,7 +45,7 @@ Before React or Node, make sure you can comfortably explain:
 * Modules
 * Memory and garbage collection
 
-# Don't just learn definitions.
+#### Don't just learn definitions.
 
 For example, don't memorize:
 
@@ -63,7 +63,7 @@ That's the level interviewers are looking for.
 
 Once JS is strong:
 
-# React fundamentals → React internals → performance
+#### React fundamentals → React internals → performance
 
 * Why React exists
 * Components
@@ -90,14 +90,14 @@ Once JS is strong:
 
 The key question for every React topic should be:
 
-# “What problem does this solve?”
+#### “What problem does this solve?”
 
 For example:
 
-# Don't learn:
+#### Don't learn:
 `useMemo` = memoization.
 
-# Learn:
+#### Learn:
 “When React renders, some calculations may be expensive. useMemo lets us reuse a previously calculated value until its dependencies change.”
 
 That makes your answer much stronger.
@@ -108,7 +108,7 @@ This is another area where interviewers can easily go beyond surface-level quest
 
 Study in this order:
 
-# JavaScript async → Node runtime → HTTP → Express → database
+#### JavaScript async → Node runtime → HTTP → Express → database
 
 * What Node.js actually is
 * V8
