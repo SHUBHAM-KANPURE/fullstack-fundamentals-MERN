@@ -78,6 +78,7 @@ Once JS is strong:
 * `useRef`
 * `useMemo`
 * `useCallback`
+* `useHooks`
 * Context API
 * Forms
 * Component communication
