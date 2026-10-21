@@ -1,12 +1,27 @@
-# Full-Stack Fundamentals — Interview Answers (English)
+# Full-Stack Fundamentals — MERN
 
 Short, practical definitions for MERN and full-stack interviews. These notes focus on what a concept does and why it matters.
+
+A practical collection of **fundamentals, core concepts, interview questions, and hands-on examples** focused on the MERN stack and related software engineering concepts.
+
+This repository is created to strengthen my understanding of **how things work**, rather than simply memorizing interview answers.
+
+## Goal
+
+The main goal of this repository is to build strong fundamentals and improve my ability to:
+
+* Understand concepts from first principles
+* Explain technical concepts clearly in interviews
+* Connect theory with real-world projects
+* Practice concepts through small examples
+* Prepare for Full-Stack / MERN interviews
 
 ## 1. JavaScript
 
 ### Variables, Scope, and Functions
 
 - **`var`, `let`, `const`:** `var` is function-scoped; `let` and `const` are block-scoped. `let` allows reassignment, while `const` prevents reassignment of the variable binding (but does not freeze an object).
+  > **Hinglish:** var, let, const: var function-scoped hota hai; let aur const block-scoped hote hain. let ko reassign kar sakte hain, const variable binding ko reassign nahi kar sakte. Lekin const object ke andar ki values ko automatically freeze nahi karta.
 - **Scope:** Scope determines where a variable can be accessed.
 - **Lexical scope:** JavaScript determines variable access from where functions and blocks are written in the code.
 - **Hoisting:** JavaScript processes declarations before executing the code. `var` is initialized to `undefined`; `let` and `const` cannot be accessed before their declaration because of the Temporal Dead Zone.
