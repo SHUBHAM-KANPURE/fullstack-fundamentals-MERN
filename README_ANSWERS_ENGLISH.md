@@ -21,6 +21,7 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ### Variables, Scope, and Functions
 
 - **`var`, `let`, `const`:** `var` is function-scoped; `let` and `const` are block-scoped. `let` allows reassignment, while `const` prevents reassignment of the variable binding (but does not freeze an object).
+
   > **Hinglish:** var, let, const: var function-scoped hota hai; let aur const block-scoped hote hain. let ko reassign kar sakte hain, const variable binding ko reassign nahi kar sakte. Lekin const object ke andar ki values ko automatically freeze nahi karta.
 - **Scope:** Scope determines where a variable can be accessed.
 - **Lexical scope:** JavaScript determines variable access from where functions and blocks are written in the code.
