@@ -490,32 +490,85 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 7. HTTP, REST, APIs, and Web Fundamentals
 
 - **HTTP request/response:** A client sends a method, URL, headers, and optionally a body; the server responds with a status code, headers, and optionally a body.
+  > **Hinglish:** Client method, URL, headers aur optional body bhejta hai; server status code, headers aur optional body return karta hai.
+  
 - **HTTP vs HTTPS:** HTTPS uses TLS to protect data in transit and authenticate the server.
+  > **Hinglish:** HTTPS, TLS use karke transit mein data protect karta hai aur server authentication provide karta hai.
+  
 - **GET:** Retrieves a representation and should not be used to perform a state-changing action.
+  > **Hinglish:** Data retrieve karne ke liye; state-changing action ke liye use nahi karna chahiye.
+  
 - **POST:** Submits data for processing, often creating a resource or triggering an operation.
+  > **Hinglish:** Data submit/process karne ke liye, aksar resource create ya operation trigger karta hai.
+  
 - **PUT:** Replaces a resource representation; it is generally intended to be idempotent.
+  > **Hinglish:** Resource representation replace karne ke liye; generally idempotent hota hai.
+  
 - **PATCH:** Applies a partial update to a resource.
+  > **Hinglish:** Resource ka partial update karne ke liye.
+  
 - **DELETE:** Requests removal of a resource and is defined as idempotent in HTTP semantics.
+  > **Hinglish:** Resource remove karne ki request; HTTP semantics mein idempotent define hai.
+  
 - **Status codes:** `2xx` indicates success, `3xx` redirection, `4xx` client/request issues, and `5xx` server errors.
+  > **Hinglish:** `2xx` success, `3xx` redirection, `4xx` client/request issue, `5xx` server error.
+  
 - **Headers:** Metadata about a request or response, such as content type, authorization, or caching rules.
+  > **Hinglish:** Request/response metadata, jaise content type, authorization aur caching rules.
+  
 - **Request body:** Data sent with a request, commonly used with POST, PUT, or PATCH.
+  > **Hinglish:** Request ke saath bheja data, commonly POST/PUT/PATCH mein.
+  
 - **Query parameters:** Key-value data in the URL after `?`, often used for filtering, sorting, and pagination.
+  > **Hinglish:** URL mein `?` ke baad key-value data; filtering, sorting, pagination mein useful.
+  
 - **Path parameters:** Values embedded in the URL path that identify a resource, such as `/tasks/:id`.
+  > **Hinglish:** URL path mein resource identify karne wali values, jaise `/tasks/:id`.
+  
 - **Cookie:** Small data stored by a browser and sent to matching requests according to cookie rules.
+  > **Hinglish:** Browser mein store chhota data jo matching requests ke saath cookie rules ke mutabik bheja jaata hai.
+  
 - **Session:** Server-managed state associated with a client, often identified by a session cookie.
+  > **Hinglish:** Server-side client state, jise aksar session cookie identify karti hai.
+  
 - **Webhook:** An HTTP request sent by one system to notify another system about an event.
+  > **Hinglish:** Event hone par ek system doosre system ko HTTP request se notify karta hai.
+  
 - **JWT:** A token format that carries claims in a signed or otherwise protected structure; a signed JWT is not automatically encrypted.
+  > **Hinglish:** Claims carry karne wala token format. Signed JWT automatically encrypted nahi hota.
+  
 - **Refresh token:** A longer-lived credential used to obtain new access tokens, with careful storage, expiry, and revocation rules.
+  > **Hinglish:** Access token renew karne ka credential; storage, expiry aur revocation carefully handle karna chahiye.
+  
 - **Authentication vs authorization:** Authentication verifies identity; authorization decides what that identity is allowed to do.
+  > **Hinglish:** Authentication identity verify karta hai; authorization permissions decide karta hai.
+  
 - **CORS:** Controls browser access to cross-origin responses; it is not a replacement for API authentication or authorization.
+  > **Hinglish:** Browser ke cross-origin response access ko control karta hai; authentication ka replacement nahi.
+  
 - **CSRF:** An attack that tricks a browser into sending an unwanted authenticated request to a site.
+  > **Hinglish:** Attack jahan browser ko user ki authenticated site par unwanted request bhejne ke liye trick kiya jaata hai.
+  
 - **XSS:** An attack where malicious script runs in a user's browser because untrusted content is handled unsafely.
+  > **Hinglish:** Unsafe handling ki wajah se malicious script user ke browser mein execute hoti hai.
+  
 - **Password hashing:** Converts a password into a one-way verifier using a password-hashing algorithm such as Argon2id or bcrypt, with salts and suitable cost settings.
+  > **Hinglish:** Password ko one-way verifier mein convert karna, Argon2id/bcrypt jaise algorithm aur suitable salt/cost ke saath.
+  
 - **API validation:** Verifies request fields, types, limits, and business rules before processing.
+  > **Hinglish:** Request fields, types, limits aur business rules process se pehle check karna.
+  
 - **API versioning:** Allows an API to evolve while managing compatibility for existing clients.
+  > **Hinglish:** Existing clients ko break kiye bina API evolve karna.
+  
 - **Idempotency:** Repeating the same request has the same intended effect as performing it once. It is useful for safe retries.
+  > **Hinglish:** Same request repeat karne par intended effect ek baar karne jaisa hi rahe. Safe retries mein useful.
+  
 - **REST:** An architectural style that emphasizes resources, representations, stateless interactions, and standard web semantics.
+  > **Hinglish:** Architectural style jo resources, representations, stateless interactions aur standard web semantics par focus karta hai.
+  
 - **Why POST instead of GET to create data?** GET is intended for retrieval and may be cached or prefetched; POST is more suitable for submitting data that changes server state.
+  > **Hinglish:** GET retrieval ke liye hai aur cache/prefetch ho sakta hai; server state change karne ke liye POST zyada suitable hai.
 
 ## 8. Authentication and Security
 
