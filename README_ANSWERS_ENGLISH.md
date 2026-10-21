@@ -287,26 +287,67 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 3. Node.js
 
 - **Node.js:** A JavaScript runtime that uses the V8 engine and provides APIs for building server-side and other networked applications.
+  > **Hinglish:** V8 JavaScript engine aur server-side APIs par based runtime, jisse server/network applications bana sakte hain.
+  
 - **V8:** The JavaScript engine that parses and executes JavaScript, including JIT compilation.
+  > **Hinglish:** JavaScript engine jo code parse aur execute karta hai.
+  
 - **libuv:** A library used by Node.js for the event loop and asynchronous I/O support, including a worker pool for certain operations.
+  > **Hinglish:** Node.js mein event loop aur asynchronous I/O support dene wali library.
+  
 - **Single-threaded model:** JavaScript callbacks usually run on one main thread per Node.js isolate, while some I/O and worker operations happen elsewhere.
+  > **Hinglish:** Ek Node.js isolate mein JavaScript callbacks aam taur par main thread par chalte hain; kuch I/O/worker operations alag resources use karte hain.
+  
 - **Non-blocking I/O:** Starts I/O work without making the JavaScript thread wait synchronously for completion.
+  > **Hinglish:** I/O operation ka wait karne ke liye JavaScript thread ko synchronously rokna nahi padta.
+  
 - **Event-driven architecture:** The program reacts to events by running registered handlers.
+  > **Hinglish:** Events hone par registered handlers execute hote hain.
+  
 - **Concurrency vs parallelism:** Concurrency manages multiple tasks over overlapping time; parallelism executes tasks at the same time on multiple execution resources.
+  > **Hinglish:** Concurrency mein tasks ka progress overlapping time par manage hota hai; parallelism mein tasks same time par execute hote hain.
+  
 - **`process.nextTick()`:** Schedules a callback in Node's next-tick queue, which is processed before the event loop continues; excessive use can starve I/O.
+  > **Hinglish:** Callback ko next-tick queue mein schedule karta hai, jo event loop continue hone se pehle process hoti hai. Bahut zyada use I/O ko starve kar sakta hai.
+  
 - **`setImmediate()`:** Schedules a callback for the check phase of the event loop.
+  > **Hinglish:** Callback ko event loop ke check phase ke liye schedule karta hai.
+  
 - **Timers:** `setTimeout()` and `setInterval()` schedule callbacks after delays; timing depends on event-loop activity.
+  > **Hinglish:** `setTimeout()` aur `setInterval()` delay ke baad callbacks schedule karte hain; exact timing event-loop load par depend karti hai.
+  
 - **Buffer:** Represents raw binary data, such as file contents or network packets.
+  > **Hinglish:** Raw binary data, jaise file content ya network packets, represent karta hai.
+  
 - **Stream:** Processes data in chunks instead of loading the entire data set into memory.
+  > **Hinglish:** Data ko chunks mein process karta hai, poora data memory mein load karna zaroori nahi.
+  
 - **Readable / Writable / Duplex / Transform streams:** Streams that read data, write data, do both, or transform data while passing it through.
+  > **Hinglish:** Data read karna, write karna, dono karna, ya process karke aage pass karna.
+  
 - **EventEmitter:** A Node.js pattern/API for registering listeners and emitting named events.
+  > **Hinglish:** Named events emit karne aur unke listeners register karne ka Node.js API/pattern.
+  
 - **Worker threads:** Run JavaScript in separate threads and are useful for CPU-intensive work.
+  > **Hinglish:** Separate threads mein JavaScript chalate hain; CPU-heavy work ke liye useful.
+  
 - **Child process:** Starts another process to run a command or program.
+  > **Hinglish:** Alag process mein command/program run karta hai.
+  
 - **Cluster:** Runs multiple Node.js processes that can share a server port, allowing use of multiple CPU cores.
+  > **Hinglish:** Multiple Node.js processes run karta hai, jisse multiple CPU cores use kiye ja sakte hain.
+  
 - **Environment variables:** Configuration values supplied outside source code, often accessed through `process.env`.
+  > **Hinglish:** Code ke bahar se configuration dene ka tareeka; Node mein `process.env` se access hoti hain.
+  
 - **Graceful shutdown:** Stops accepting new work, finishes or safely closes ongoing work, releases resources, and exits.
+  > **Hinglish:** New requests rokna, ongoing work ko safely complete/close karna, resources release karna aur exit karna.
+  
 - **Background job:** Work performed outside the immediate request-response path, often through a queue or worker.
+  > **Hinglish:** Aisa work jo immediate HTTP response ke baad worker/queue se process hota hai.
+  
 - **Node error handling:** Handle expected failures near the operation, propagate errors with context, and avoid leaving rejected promises unhandled.
+  > **Hinglish:** Failure ko sahi jagah handle karein, useful context dein aur unhandled promise rejections se bachein.
 
 ## 4. Express.js
 
