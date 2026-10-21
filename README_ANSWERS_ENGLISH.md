@@ -399,25 +399,64 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 5. MongoDB and Database Fundamentals
 
 - **MongoDB:** A document-oriented NoSQL database that stores records as BSON documents inside collections.
+  > **Hinglish:** Document-oriented NoSQL database jo BSON documents ko collections mein store karta hai.
+  
 - **Database / collection / document:** A database contains collections; a collection contains documents, broadly comparable to a table and its rows in a relational database.
+  > **Hinglish:** Database mein collections hoti hain aur collection mein documents. Roughly relational DB ke table/row se compare kar sakte hain.
+  
 - **`_id` / ObjectId:** Every MongoDB document has a unique `_id`; ObjectId is a common identifier type, but `_id` can use other supported types.
+  > **Hinglish:** Har document ka unique `_id` hota hai. ObjectId common type hai, lekin `_id` doosre supported types ka bhi ho sakta hai.
+  
 - **CRUD:** Create, Read, Update, and Delete operations on data.
+  > **Hinglish:** Create, Read, Update aur Delete operations.
+  
 - **Schema:** A description of the expected structure and rules for data. MongoDB is flexible, though validation can enforce a schema.
+  > **Hinglish:** Data ka expected structure aur rules. MongoDB flexible hai, lekin validation se rules enforce kar sakte hain.
+  
 - **Index:** A data structure that helps MongoDB find matching records faster, at the cost of storage and write overhead.
+  > **Hinglish:** Matching records ko faster find karne mein help karta hai, lekin extra storage aur write overhead hota hai.
+  
 - **Compound index:** An index containing multiple fields; field order affects which query patterns it supports.
+  > **Hinglish:** Multiple fields ka index; field order query support ko affect karta hai.
+  
 - **Query optimization:** Improving query speed by examining filters, indexes, returned fields, sort operations, and execution plans.
+  > **Hinglish:** Filters, indexes, returned fields, sorting aur execution plan improve karke query fast karna.
+  
 - **`explain()`:** Shows how a database query is planned and executed, helping identify scans and index usage.
+  > **Hinglish:** Query ka execution plan dikhata hai, jisse scans aur index usage samajh sakte hain.
+  
 - **Aggregation pipeline:** A sequence of stages that filters, transforms, groups, joins, or summarizes documents.
+  > **Hinglish:** Stages ki series jo documents filter, transform, group, join ya summarize karti hai.
+  
 - **`$lookup`:** An aggregation stage that joins matching documents from another collection.
+  > **Hinglish:** Aggregation stage jo doosri collection se matching documents join karti hai.
+  
 - **Embedding vs referencing:** Embedding stores related data inside one document; referencing stores links/IDs to separate documents.
+  > **Hinglish:** Embedding related data ko same document mein rakhta hai; referencing IDs ke through separate documents ko connect karta hai.
+  
 - **Transaction:** Groups multiple database operations so they succeed or fail together according to transaction guarantees.
+  > **Hinglish:**  Multiple database operations ko ek group ki tarah treat karta hai, taaki transaction guarantees ke mutabik saath succeed/fail ho sakein.
+  
 - **Atomicity:** An operation is treated as all-or-nothing.
+  > **Hinglish:** Operation all-or-nothing hota hai.
+  
 - **Pagination:** Returns a large result set in smaller portions, using approaches such as skip/limit or cursor-based pagination.
+  > **Hinglish:** Large results ko chhote pages mein dena; skip/limit ya cursor-based approach use kar sakte hain.
+  
 - **MongoDB vs SQL:** MongoDB stores flexible documents; relational databases store data in tables with defined relationships and strong relational query capabilities. Choose based on data shape and requirements.
+  > **Hinglish:** MongoDB flexible documents use karta hai; relational DB tables aur defined relationships use karta hai. Choice data aur requirements par depend karti hai.
+  
 - **Relationship:** A connection between records, such as one-to-one, one-to-many, or many-to-many.
+  > **Hinglish:** Records ke beech connection, jaise one-to-one, one-to-many, many-to-many.
+  
 - **Normalization:** Organizes relational data to reduce duplication and update anomalies.
+  > **Hinglish:** Relational data ko organize karna taaki duplication aur update problems kam hon.
+  
 - **ACID:** Atomicity, Consistency, Isolation, and Durability—properties associated with reliable transactions.
+  > **Hinglish:** Atomicity, Consistency, Isolation, Durability—reliable transactions ki properties.
+  
 - **SQL basics:** Learn `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `WHERE`, `JOIN`, `GROUP BY`, and constraints.
+  > **Hinglish:** `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `WHERE`, `JOIN`, `GROUP BY` aur constraints samjhein.
 
 ## 6. Mongoose
 
