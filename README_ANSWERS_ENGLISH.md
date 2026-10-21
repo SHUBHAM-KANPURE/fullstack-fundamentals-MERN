@@ -461,14 +461,31 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 6. Mongoose
 
 - **Mongoose:** An ODM library that provides schemas, models, validation, middleware, and convenient MongoDB operations for Node.js.
+  > **Hinglish:** Node.js ODM library jo MongoDB ke liye schemas, models, validation, middleware aur convenient queries deti hai.
+  
 - **Schema:** Defines document paths, types, defaults, validation, and other schema-level behavior.
+  > **Hinglish:** Document ke fields, types, defaults aur validation rules define karta hai.
+  
 - **Model:** A compiled interface based on a schema used to create, query, update, and delete documents.
+  > **Hinglish:** Schema se bana interface jisse documents create, query, update aur delete karte hain.
+  
 - **Validation:** Checks document values against schema rules before saving or validating.
+  > **Hinglish:** Save/validate se pehle values ko schema rules ke against check karta hai.
+  
 - **Middleware/hooks:** Functions that run before or after supported model/document/query operations.
+  > **Hinglish:**  Supported document, model ya query operations se pehle/baad functions run karte hain.
+  
 - **`populate()`:** Replaces referenced IDs with matching documents from another collection.
+  > **Hinglish:** Referenced IDs ko related collection ke documents se replace karta hai.
+  
 - **`lean()`:** Returns plain JavaScript objects instead of full Mongoose documents, often reducing overhead for read-only queries.
+  > **Hinglish:** Full Mongoose documents ke bajay plain JavaScript objects return karta hai; read-only queries mein overhead kam ho sakta hai.
+  
 - **`save()`:** Saves a document and runs applicable document validation and middleware.
+  > **Hinglish:** Document save karta hai aur applicable document validation/middleware chalata hai.
+  
 - **`insertMany()`:** Inserts multiple documents; its validation and middleware behavior differs from saving documents individually.
+  > **Hinglish:** Multiple documents insert karta hai; validation aur middleware ka behavior individual `save()` se different hota hai.
 
 ## 7. HTTP, REST, APIs, and Web Fundamentals
 
