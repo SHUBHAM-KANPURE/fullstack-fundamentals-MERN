@@ -573,13 +573,28 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 8. Authentication and Security
 
 - **Role-Based Access Control (RBAC):** Grants permissions according to roles, such as admin, manager, or user.
+  > **Hinglish:** Permissions roles ke basis par dena, jaise admin, manager ya user.
+  
 - **Access token:** A credential sent with a request to access protected resources; keep its lifetime and storage appropriate to the threat model.
+  > **Hinglish:** Protected resources access karne ke liye request ke saath bheja credential.
+  
 - **Secure token handling:** Validate signature, issuer/audience where applicable, expiry, and allowed algorithms; never trust decoded claims alone.
+  > **Hinglish:** Signature, expiry aur relevant issuer/audience verify karein; sirf decoded claims par trust na karein.
+  
 - **Least privilege:** Give users and services only the permissions they need.
+  > **Hinglish:** User/service ko sirf utni permissions dena jitni kaam ke liye zaroori hain.
+  
 - **Input sanitization / output encoding:** Validate inputs and safely encode output for its context to reduce injection and script risks.
+  > **Hinglish:** Input rules check karna aur output ko context ke hisaab se safely encode karna.
+  
 - **Secrets management:** Keep API keys and credentials out of source control; use environment configuration or a secrets manager and rotate exposed secrets.
+  > **Hinglish:** API keys/passwords source control mein commit na karein; secure configuration/secrets manager use karein aur leaked secrets rotate karein.
+  
 - **Security headers:** HTTP headers that enable browser protections, such as Content Security Policy and frame restrictions.
+  > **Hinglish:** CSP jaise HTTP headers browser protections enable karte hain.
+  
 - **Defense in depth:** Use multiple complementary security controls rather than relying on one mechanism.
+  > **Hinglish:** Ek security control par depend karne ke bajay multiple layers use karna.
 
 ## 9. Git, Deployment, and Engineering
 
