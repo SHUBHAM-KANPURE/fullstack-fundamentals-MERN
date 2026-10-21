@@ -1,7 +1,5 @@
 # Full-Stack Fundamentals — MERN
 
-Short, practical definitions for MERN and full-stack interviews. These notes focus on what a concept does and why it matters.
-
 A practical collection of **fundamentals, core concepts, interview questions, and hands-on examples** focused on the MERN stack and related software engineering concepts.
 
 This repository is created to strengthen my understanding of **how things work**, rather than simply memorizing interview answers.
