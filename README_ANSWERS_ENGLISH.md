@@ -188,37 +188,101 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 2. React
 
 - **Why React:** React lets developers describe UI from data/state and updates the DOM when that data changes.
+  > **Hinglish:** React state/data ke basis par UI describe karne deta hai aur data change hone par DOM update karta hai.
+  
 - **Component:** A reusable unit of UI, commonly written as a function returning JSX.
+  > **Hinglish:** UI ka reusable part, jo commonly function ke form mein JSX return karta hai.
+  
 - **JSX:** JavaScript syntax extension used to describe UI; build tools transform it into JavaScript calls.
+  > **Hinglish:** JavaScript mein UI likhne ka syntax; build tools ise JavaScript calls mein transform karte hain.
+  
 - **Props:** Read-only inputs passed from a parent component to a child.
+  > **Hinglish:** Parent component se child ko milne wale read-only inputs.
+  
 - **State:** Component-managed data; updating state can trigger a re-render.
+  > **Hinglish:** Component ka managed data; state update hone par re-render trigger ho sakta hai.
+  
 - **Rendering:** React calls components to calculate what the UI should look like.
+  > **Hinglish:** React component ko call karke decide karta hai ki UI kaisi honi chahiye.
+  
 - **Re-rendering:** React recalculates a component's UI after relevant state, props, or context changes.
+  > **Hinglish:** State, props ya context change hone par React component ka UI dobara calculate karta hai.
+  
 - **Virtual DOM:** A common term for React's in-memory representation of UI elements used during rendering and reconciliation.
+  > **Hinglish:** UI elements ka in-memory representation, jise React rendering/reconciliation ke dauran use karta hai.
+  
 - **Reconciliation:** React's process for comparing rendered trees and deciding what updates are needed.
+  > **Hinglish:** Purane aur naye rendered tree ko compare karke required UI updates decide karna.
+- **Keys:** List items ko renders ke beech identify/match karne mein help karti hain. Items reorder ya delete ho sakte hain to stable unique ID use karein.
+  
 - **Keys:** Stable identifiers that help React match list items between renders. Prefer unique, stable IDs over array indexes when items can change order.
+  > **Hinglish:**
+  
 - **Hooks:** Functions such as `useState` and `useEffect` that let function components use React features.
+  > **Hinglish:** `useState`, `useEffect` jaise functions jo function components mein React features use karne dete hain.
+  
 - **`useState`:** Stores component state and provides a setter that schedules an update.
+  > **Hinglish:** Component state store karta hai aur setter update schedule karta hai.
+  
 - **`useEffect`:** Synchronizes a component with external systems, such as subscriptions, timers, or network-related effects. It is not needed for every calculation.
+  > **Hinglish:** Component ko external systems ke saath synchronize karne ke liye, jaise subscription ya timer. Har calculation ke liye effect ki zaroorat nahi hoti.
+  
 - **Effect dependencies:** Values that determine when an effect should re-run; include the reactive values used by the effect.
+  > **Hinglish:** Ye decide karti hain ki effect kab dobara run hoga; effect mein use hone wali reactive values include karein.
+  
 - **`useRef`:** Stores a mutable value that persists across renders without triggering a re-render when changed; often used for DOM references.
+  > **Hinglish:** Aisi value store karta hai jo renders ke beech persist karti hai; change hone par re-render trigger nahi hota.
+  
 - **`useMemo`:** Caches a calculated value between renders while dependencies remain unchanged.
+  > **Hinglish:** Dependencies same rehne tak calculated value ko cache karta hai.
+  
 - **`useCallback`:** Caches a function reference between renders while dependencies remain unchanged.
+  > **Hinglish:** Dependencies same rehne tak function reference ko cache karta hai.
+  
 - **`useContext`:** Reads a value provided by a matching React context.
+  > **Hinglish:** React context se provided value read karta hai.
+  
 - **Context API:** Shares values across a component tree without passing props through every intermediate component.
+  > **Hinglish:** Har intermediate component se props pass kiye bina component tree mein value share karna.
+  
 - **Custom Hook:** A reusable function whose name starts with `use` and which can combine React hooks and logic.
+  > **Hinglish:** Reusable function jiska naam `use` se start hota hai aur jo React hooks/logic combine karta hai.
+  
 - **Controlled input:** A form element whose displayed value is driven by React state.
+  > **Hinglish:** Input ki value React state control karti hai.
+  
 - **Uncontrolled input:** A form element that keeps its value in the DOM, commonly accessed using a ref.
+  > **Hinglish:** Input apni value DOM mein rakhta hai; aksar ref se read karte hain.
+  
 - **Lifting state up:** Moving shared state to the closest common parent that needs to coordinate multiple children.
+  > **Hinglish:** Shared state ko closest common parent mein move karna.
+  
 - **Prop drilling:** Passing props through intermediate components that do not themselves need the values.
+  > **Hinglish:** Aise intermediate components se props pass karna jinhe khud un values ki zaroorat nahi.
+  
 - **Conditional rendering:** Showing different UI depending on a condition.
+  > **Hinglish:** Condition ke basis par alag UI dikhana.
+  
 - **React Router:** A routing library commonly used to display different components for different client-side URLs.
+  > **Hinglish:** URL ke basis par client-side pages/components show karne ke liye routing library.
+  
 - **Lazy loading / code splitting:** Loading a component or code chunk only when needed to reduce initial loading work.
+  > **Hinglish:** Code ya component ko zaroorat padne par load karna, jisse initial load ka kaam kam ho.
+  
 - **Performance optimization:** Reduce unnecessary work using suitable component boundaries, stable keys, memoization when measured to help, and code splitting.
+  > **Hinglish:** Unnecessary work kam karna; memoization tab use karein jab actual benefit ho.
+  
 - **`React.memo`:** Skips rendering a component when its props are equal to the previous props, subject to its comparison behavior.
+  > **Hinglish:** Props same hone par component render skip kar sakta hai, comparison behavior ke hisaab se.
+  
 - **State management:** The approach used to store, update, and share application data, using local state, Context, or a library as complexity requires.
+  > **Hinglish:** App data ko store/update/share karne ka approach—local state, Context ya library.
+  
 - **Error boundary:** A React component pattern that catches rendering errors in its descendant tree and displays fallback UI; it does not catch every kind of error, such as ordinary event-handler errors.
+  > **Hinglish:** Descendant tree ke rendering errors pakad kar fallback UI dikhata hai; har type ka error catch nahi karta.
+  
 - **Strict Mode:** A development-only tool that helps reveal unsafe patterns and may intentionally re-run certain logic to expose side effects.
+  > **Hinglish:** Development mein unsafe patterns detect karne mein help karta hai; kuch logic ko jaan-bujhkar dobara run karke side effects expose kar sakta hai.
 
 ## 3. Node.js
 
