@@ -21,69 +21,169 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ### Variables, Scope, and Functions
 
 - **`var`, `let`, `const`:** `var` is function-scoped; `let` and `const` are block-scoped. `let` allows reassignment, while `const` prevents reassignment of the variable binding (but does not freeze an object).
-
   > **Hinglish:** `var` function-scoped hota hai; `let` aur `const` block-scoped hote hain. `let` ko reassign kar sakte hain, `const` variable binding ko reassign nahi kar sakte. Lekin `const` object ke andar ki values ko automatically freeze nahi karta.
+
 - **Scope:** Scope determines where a variable can be accessed.
+  > **Hinglish:** Scope batata hai ki variable code ke kis area mein access ho sakta hai.
+  
 - **Lexical scope:** JavaScript determines variable access from where functions and blocks are written in the code.
+  > **Hinglish:** Variable ka access is baat se decide hota hai ki code kahan likha gaya hai, function kahan call hua isse nahi.
+  
 - **Hoisting:** JavaScript processes declarations before executing the code. `var` is initialized to `undefined`; `let` and `const` cannot be accessed before their declaration because of the Temporal Dead Zone.
+  > **Hinglish:** JavaScript code execute karne se pehle declarations ko process karta hai. `var` ki initial value `undefined` hoti hai; `let`/`const` ko declaration se pehle access nahi kar sakte, kyunki TDZ hota hai.
+  
 - **Closure:** A closure occurs when a function retains access to variables from its outer scope, even after that outer function has finished.
+  > **Hinglish:** Jab inner function outer function ke variables ko yaad rakhta hai, outer function finish hone ke baad bhi, use closure kehte hain.
+  
 - **`this`:** The value of `this` usually depends on how a function is called. Arrow functions inherit `this` from their surrounding scope.
+  > **Hinglish:** `this` ki value generally is baat par depend karti hai ki function kaise call hua. Arrow function apne surrounding scope ka `this` use karta hai.
+  
 - **Function:** A reusable block of code that can accept inputs and return a result.
+  > **Hinglish:** Reusable code block jo input le sakta hai aur result return kar sakta hai.
+  
 - **Callback:** A function passed to another function to be called later or when an operation completes.
+  > **Hinglish:** Aisa function jo kisi doosre function ko diya jaata hai taaki use baad mein call kiya ja sake.
+  
 - **Arrow function:** A shorter function syntax that does not have its own `this` or `arguments` and cannot be used as a constructor.
+  > **Hinglish:** Function likhne ka short syntax. Iska apna `this` aur `arguments` nahi hota, aur ise constructor ki tarah use nahi kar sakte.
+  
 - **Prototype:** An object from which another object can inherit properties and methods through the prototype chain.
+  > **Hinglish:** Ek object jahan se doosra object prototype chain ke through properties aur methods inherit kar sakta hai.
+  
 - **`==` vs `===`:** `==` may convert types before comparison; `===` compares without type conversion. Prefer `===` for predictable comparisons.
+  > **Hinglish:** `==` comparison se pehle type conversion kar sakta hai; `===` type conversion ke bina compare karta hai. Predictable result ke liye `===` prefer karein.
+  
 - **`null` vs `undefined`:** `undefined` commonly means a value has not been assigned; `null` represents an intentionally empty value.
+  > **Hinglish:** `undefined` ka matlab aam taur par value assign nahi hui; `null` ka matlab intentionally empty value.
+  
 - **Destructuring:** A syntax for extracting values from arrays or properties from objects into variables.
+  > **Hinglish:** Array ya object se values nikaal kar variables mein rakhne ka short syntax.
+  
 - **Spread syntax:** `...` expands iterable items or object properties into a new array/object or function call.
+  > **Hinglish:** Array/object ki values ko expand karke naya array/object ya function arguments banane mein use hota hai.
+  
 - **Rest parameters:** `...args` collects remaining function arguments into an array.
+  > **Hinglish:** `...args` function ke remaining arguments ko ek array mein collect karta hai.
+  
 - **Pass by value:** JavaScript passes values to functions. For objects, the copied value is a reference to the same object, so mutations can be visible to the caller.
+  > **Hinglish:** JavaScript values pass karta hai. Object ke case mein copied value same object ka reference hoti hai, isliye object ki mutation caller ko bhi dikh sakti hai.
+  
 - **Shallow copy:** Copies only the first level; nested objects are still shared references.
+  > **Hinglish:** Sirf first level copy hota hai; nested objects ke references same reh sakte hain.
+  
 - **Deep copy:** Copies nested data too, so changes to the copy do not affect the original, subject to the copying method's supported data types.
+  > **Hinglish:** Nested data bhi copy karta hai, taaki copy mein changes original ko affect na karein; supported data types copying method par depend karte hain.
 
 ### Arrays and Objects
 
 - **`forEach()`:** Runs a callback for each array item and does not build a result array.
+  > **Hinglish:** Har array item par callback chalata hai; result array create nahi karta.
+  
 - **`map()`:** Transforms each item and returns a new array of the same length.
+  > **Hinglish:** Har item ko transform karke same length ka naya array return karta hai.
+  
 - **`filter()`:** Returns a new array containing items that pass a condition.
+  > **Hinglish:** Condition pass karne wale items ka naya array return karta hai.
+  
 - **`reduce()`:** Combines array items into one accumulated result, such as a sum or grouped object.
+  > **Hinglish:** Array ke items ko combine karke ek final result banata hai, jaise sum ya grouped object.
+  
 - **`find()`:** Returns the first item that matches a condition, or `undefined`.
+  > **Hinglish:** Condition match karne wala pehla item deta hai; match na mile to `undefined`.
+  
 - **`some()`:** Returns `true` if at least one item passes a condition.
+  > **Hinglish:** Kam se kam ek item condition pass kare to `true`.
+  
 - **`every()`:** Returns `true` only if all items pass a condition.
+  > **Hinglish:** Sabhi items condition pass karein tabhi `true`.
+  
 - **`slice()` vs `splice()`:** `slice()` returns a selected portion without changing the original array; `splice()` adds/removes items in the original array.
+  > **Hinglish:** `slice()` original array ko change kiye bina portion return karta hai; `splice()` original array mein items add/remove karta hai.
+  
 - **Mutable vs immutable methods:** Mutating methods change the original value; non-mutating methods return a result without changing it.
+  > **Hinglish:** Mutable method original value change karta hai; non-mutating method original ko badle bina result deta hai.
+  
 - **Optional chaining (`?.`):** Safely accesses a nested property or method when an earlier value may be `null` or `undefined`.
+  > **Hinglish:** Agar beech ki value `null` ya `undefined` ho to nested property access se error aane se bachata hai.
+  
 - **Nullish coalescing (`??`):** Uses a fallback only when the left side is `null` or `undefined`, unlike `||`, which also treats values such as `0` and `''` as false.
+  > **Hinglish:** Fallback sirf `null`/`undefined` par deta hai. `||` `0` aur empty string ko bhi false maanta hai.
+  
 - **JSON:** A text format for exchanging structured data. `JSON.stringify()` converts supported JavaScript data to JSON text; `JSON.parse()` converts JSON text into a JavaScript value.
+  > **Hinglish:** Structured data exchange karne ka text format. `JSON.stringify()` supported JS data ko JSON text banata hai; `JSON.parse()` JSON text ko JS value banata hai.
 
 ### Asynchronous JavaScript
 
 - **Synchronous code:** Runs one step at a time; the next step waits for the current step to finish.
-- **Asynchronous code:** Lets an operation complete later so the program can continue other work while waiting.
+  > **Hinglish:** Ek step complete hota hai, phir next step execute hota hai.
+  
+- **Asynchronous code:** Lets an operation complete later so the program can continue other work while waiting. Waiting operation ke complete hone tak program doosra kaam kar sakta hai.
+  > **Hinglish:**
+  
 - **Promise:** An object representing the eventual success or failure of an asynchronous operation. Its states are pending, fulfilled, or rejected.
+  > **Hinglish:** Future mein complete hone wale async operation ki success ya failure represent karta hai. States: pending, fulfilled, rejected.
+  
 - **`async/await`:** Syntax for working with promises in a readable, sequential style. `await` pauses the async function, not the entire JavaScript thread.
+  > **Hinglish:** Promise-based code ko readable banata hai. `await` async function ko pause karta hai, poore JavaScript thread ko nahi.
+  
 - **Event loop:** Coordinates queued callbacks with the call stack so JavaScript can handle asynchronous work.
+  > **Hinglish:** Call stack aur queued callbacks ko coordinate karta hai, jisse async work handle hota hai.
+  
 - **Call stack:** Tracks the functions currently executing.
+  > **Hinglish:** Abhi execute ho rahe functions ka record rakhta hai.
+  
 - **Microtask vs macrotask:** Promise handlers and `queueMicrotask()` use the microtask queue; timers and many I/O callbacks are scheduled through task queues. Microtasks are generally drained before the next task.
+  > **Hinglish:** Promise callbacks microtask queue mein aate hain; timers aur kai I/O callbacks task queues se run hote hain. Aam taur par next task se pehle microtasks process hote hain.
+  
 - **`setTimeout()`:** Schedules a callback to run after at least the specified delay; it does not guarantee an exact execution time.
+  > **Hinglish:** Diye gaye delay ke baad callback schedule karta hai; exact time par run hone ki guarantee nahi.
+  
 - **`Promise.all()`:** Fulfills when all input promises fulfill, and rejects as soon as one rejects.
+  > **Hinglish:** Sabhi promises fulfill hon to fulfill hota hai; koi ek reject ho to reject ho jaata hai.
+  
 - **`Promise.allSettled()`:** Waits for every input promise to settle and reports each outcome.
+  > **Hinglish:** Har promise ka settle hona wait karta hai aur har result ka status deta hai.
+  
 - **`Promise.race()`:** Settles with the first input promise that settles.
+  > **Hinglish:** Jo promise sabse pehle settle hota hai, uske result se settle hota hai.
+  
 - **`Promise.any()`:** Fulfills with the first fulfilled promise; rejects with `AggregateError` if all reject.
+  > **Hinglish:** Pehle fulfilled promise ka result deta hai; sab reject ho jaayein to `AggregateError`.
+  
 - **Error handling:** Use `try/catch` for synchronous errors and awaited promise failures, and `.catch()` for promise chains. Handle errors meaningfully instead of silently ignoring them.
+  > **Hinglish:** `async/await` ke saath `try/catch`, promise chain ke saath `.catch()` use karein. Errors ko silently ignore na karein.
+  
 - **Debouncing:** Delays execution until calls stop for a chosen period; useful for search inputs.
+  > **Hinglish:** Calls rukne ke kuch time baad function run karta hai; search input mein useful hai.
+  
 - **Throttling:** Limits a function to run at most once per time interval; useful for scroll or resize handlers.
+  > **Hinglish:** Ek time interval mein function kitni baar run ho sakta hai, uski limit lagata hai; scroll/resize mein useful hai.
+  
 - **Currying:** Converts a function with multiple arguments into a sequence of functions that each take one or fewer arguments.
+  > **Hinglish:** Multiple arguments lene wale function ko functions ki chain mein convert karna, jahan har function ek ya kam arguments leta hai.
+  
 - **`call`, `apply`, `bind`:** Set a regular function's `this`; `call` passes arguments separately, `apply` passes them as an array-like value, and `bind` returns a new bound function.
+  > **Hinglish:** Regular function ka `this` set karte hain. `call` arguments separately leta hai, `apply` array-like input leta hai, `bind` naya bound function return karta hai.
+  
 - **Memory leak:** Memory remains occupied because something still references data that is no longer needed, such as forgotten timers, event listeners, or unbounded caches.
+  > **Hinglish:** Jab unnecessary data ka reference reh jaata hai aur memory release nahi hoti, jaise forgotten timers, listeners ya unlimited cache.
+  
 - **Garbage collection:** The JavaScript engine reclaims memory used by objects that are no longer reachable.
-
+  > **Hinglish:** JavaScript engine un objects ki memory free karta hai jo ab reachable nahi hain.
+  
 ### Modules and Runtime
 
 - **CommonJS vs ES Modules:** CommonJS uses `require()` and `module.exports`; ES Modules use `import` and `export`.
+  > **Hinglish:** CommonJS mein `require()`/`module.exports`; ES Modules mein `import`/`export` use hota hai.
+  
 - **Strict mode:** Enables stricter JavaScript behavior and catches certain mistakes; class bodies and modules are strict by default.
+  > **Hinglish:** JavaScript ke stricter rules enable karta hai aur kuch mistakes pakadta hai. Modules aur class bodies strict mode mein hote hain.
+  
 - **Type coercion:** Automatic or explicit conversion from one data type to another.
+  > **Hinglish:** Ek data type ka doosre type mein automatic ya explicit conversion.
+  
 - **Event delegation:** Attaches one event handler to a parent and uses event bubbling to handle events from its children.
+  > **Hinglish:** Parent par ek event handler laga kar bubbling ki help se child elements ke events handle karna.
 
 ## 2. React
 
