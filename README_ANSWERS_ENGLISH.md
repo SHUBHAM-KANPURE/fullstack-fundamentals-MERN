@@ -352,20 +352,49 @@ The main goal of this repository is to build strong fundamentals and improve my 
 ## 4. Express.js
 
 - **Express.js:** A minimal Node.js web framework for routing HTTP requests and building APIs.
+  > **Hinglish:** Node.js ka minimal web framework jo HTTP routes aur APIs banane mein help karta hai.
+  
 - **Request/response lifecycle:** A request reaches the server, passes through middleware and route handlers, may access services or a database, and ends with a response.
+  > **Hinglish:** Request server par aati hai, middleware/routes se pass hoti hai, business logic/database use ho sakta hai, phir response return hota hai.
+  
 - **Routing:** Maps an HTTP method and URL path to a handler.
+  > **Hinglish:** HTTP method aur URL path ko handler ke saath map karna.
+  
 - **Middleware:** A function that can inspect or modify the request/response, end the response, or pass control to the next middleware.
+  > **Hinglish:** Request/response inspect ya modify karta hai, response end karta hai, ya control next middleware ko deta hai.
+  
 - **Controller:** Handles the HTTP layer, reads input, calls application logic, and returns a response.
+  > **Hinglish:** HTTP request ka input handle karta hai, business logic call karta hai aur response bhejta hai.
+  
 - **Service layer:** Contains reusable business logic separated from HTTP handling.
+  > **Hinglish:** Reusable business logic ko HTTP handling se separate rakhti hai.
+  
 - **Error-handling middleware:** Centralizes errors using the Express error middleware signature `(err, req, res, next)`.
+  > **Hinglish:** `(err, req, res, next)` signature se errors ko centrally handle karta hai.
+  
 - **Authentication middleware:** Verifies who the requester is, for example by validating a token.
+  > **Hinglish:** Requester ki identity verify karta hai, jaise token validate karke.
+  
 - **Validation:** Checks that incoming data has the expected shape, types, and rules before business logic uses it.
+  > **Hinglish:** Business logic se pehle request data ka shape, type aur rules check karna.
+  
 - **REST API:** An HTTP API designed around resources and standard HTTP semantics.
+  > **Hinglish:** Resources aur standard HTTP semantics ke around designed API.
+  
 - **CORS:** A browser security mechanism that controls which origins may read cross-origin responses.
+  > **Hinglish:** Browser ko control karta hai ki kaunse origins cross-origin response read kar sakte hain.
+  
 - **Rate limiting:** Restricts how often a client can make requests within a time window.
+  > **Hinglish:** Ek time window mein client ki requests limit karna.
+  
 - **API structure:** A maintainable separation of routes, controllers, services, models, middleware, and configuration.
+  > **Hinglish:** Routes, controllers, services, models, middleware aur config ko logically separate karna.
+  
 - **Centralized error handling:** Converts errors into consistent responses and avoids repeating error-response logic in every route.
+  > **Hinglish:** Har route mein duplicate error response code likhne ke bajay common handler use karna.
+  
 - **Joi / Zod:** Schema-validation libraries used to validate and sometimes transform request data.
+  > **Hinglish:** Schema-validation libraries jo request data validate aur kabhi-kabhi transform karti hain.
 
 ## 5. MongoDB and Database Fundamentals
 
