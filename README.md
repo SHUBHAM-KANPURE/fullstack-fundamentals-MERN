@@ -27,11 +27,13 @@ The main goal of this repository is to build strong fundamentals and improve my 
 - **Lexical scope:** JavaScript determines variable access from where functions and blocks are written in the code.
   > **Hinglish:** Variable ka access is baat se decide hota hai ki code kahan likha gaya hai, function kahan call hua isse nahi.
   
-- **Hoisting:** JavaScript processes declarations before executing the code. `var` is initialized to `undefined`; `let` and `const` cannot be accessed before their declaration because of the Temporal Dead Zone.
-  > **Hinglish:** JavaScript code execute karne se pehle declarations ko process karta hai. `var` ki initial value `undefined` hoti hai; `let`/`const` ko declaration se pehle access nahi kar sakte, kyunki TDZ hota hai.
+- **Hoisting:** `Hoisting` is JavaScript’s behavior where variable and function declarations are moved to the top of their scope during compilation, before code execution.
+  > **Hinglish:** `Hoisting` JavaScript ka ek behavior hai jisme variable aur function declarations ko code execute hone se pehle, compilation ke time, unke scope ke top par move kar diya jata hai.
+Matlab aap variable ya function ko declare karne se pehle use kar sakte ho (kuch cases mein).
   
-- **Closure:** A closure occurs when a function retains access to variables from its outer scope, even after that outer function has finished.
-  > **Hinglish:** Jab inner function outer function ke variables ko yaad rakhta hai, outer function finish hone ke baad bhi, use closure kehte hain.
+- **Closure:** A closure is created when a function remembers variables from its outer (lexical) scope, even after the outer function has finished executing.
+  > **Hinglish:** Closure tab banta hai jab koi function apne outer (lexical) scope ke variables ko yaad rakhta hai, chahe outer function execute hokar khatam ho chuka ho.
+Matlab inner function ke paas outer function ke variables ka access hamesha bana rehta hai.
   
 - **`this`:** The value of `this` usually depends on how a function is called. Arrow functions inherit `this` from their surrounding scope.
   > **Hinglish:** `this` ki value generally is baat par depend karti hai ki function kaise call hua. Arrow function apne surrounding scope ka `this` use karta hai.
